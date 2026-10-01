@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Bio</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #FFD700; /* Yellow background color for table head */
+            border: 2px solid #FFD700; /* Double border line for table head */
+        }
+        .profile-image {
+            width: 200px;
+            height: auto;
+            border: 2px solid #FFD700; /* Double border line for passport */
+            padding: 5px; /* Add padding for spacing */
+        }
+        img#ghost {
+            width: 275px;
+            border: 10px solid #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+<!-- U.S. military star icon -->
+<img src="https://tse2.mm.bing.net/th/id/OIP.Yonfsvfu1il1tkMDSj5LGwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="U.S. military star" width="75" height="75">
+
+<!-- Image link -->
+
+<img id = "ghost"
+src="img/ffffffff.jpeg" alt="Sergeant Image"width="175" height="185">
+
+<!-- Boxed table -->
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Data</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>Emily  Sleten Hanson</td>
+    </tr>
+    <tr>
+        <td>Birth Date</td>
+        <td>1993</td>
+    </tr>
+    
+    <tr>
+        <td>Citizen Status</td>
+        <td>Bismarck, North Dakota, USA </td>
+    </tr>
+    <tr>
+        <td>Rank</td>
+        <td>Major </td>
+    </tr>
+    <tr>
+        <td>Branch</td>
+        <td>Airforce </td>
+    </tr>
+   
+    <!-- Additional rows -->
+    
+     <tr>
+        <td>Years of Service</td>
+        <td>10 years  </td>
+    </tr>
+    <tr>
+        <td>Deployment Base</td>
+        <td> Naval Air Station North Island, San Diego, California</td>
+    </tr>
+    <tr>
+        <td>Specializations</td>
+        <td>VFA-147 (Argonauts) </td>
+    </tr>
+    <tr>
+        <td>Training Courses</td>
+        <td>Navy Enlisted Classification (NEC) / Naval Aviation Training, Tactical Combat Casualty Care (TCCC), Aviation Medicine & Flightline Emergency Response </td>
+    </tr>
+    <tr>
+        <td>Foreign Languages</td>
+        <td>English, French  </td>
+    </tr>
+  
+     <tr>
+        <td>Deployments</td>
+        <td>Afghanistan, South Korea,  Poland,  Iran</td>
+    </tr>
+    <tr>
+        <td>Awards</td>
+        <td>Navy & Marine Corps Achievement Medal (NAM), Navy & Marine Corps Commendation Medal (NCM), Air Medal, Airforce Combat Action Medal (CAM), </td>
+    </tr>
+    <tr>
+        <td>Psychological evaluation</td>
+
+       
+        <td>- Extremely high I.Q
+            <br>- High levels of resilience and adaptability (ability to thrive in dynamic environments)
+<br>- Exceptional motivation and initiative (self-starter with a strong work ethic)
+<br>- Strong sense of duty and loyalty (committed to mission accomplishment and teamwork)
+<br>- Excellent emotional regulation and impulse control (maturity and composure under stress)
+<br><br>
+<strong>Reason for Evaluation:</strong>
+
+<br>MAJ Emily  Sleten Hanson was referred for a psychological evaluation following her involvement in a high-stress naval aviation emergency response operation during a significant operational incident on June 15, 2022. The purpose of the evaluation is to assess her psychological well-being, occupational functioning, and fitness for continued duty within a naval aviation environment.
+
+<br><br><strong>Background Information:</strong>
+<br>Maj Emily sleten hanson an F-35C Lightning II pilot has been serving in the U.S. Navy for 3 years. She has received advanced training in Tactical Combat Casualty Care (TCCC), aviation emergency response, and operational trauma care. She is fluent in English and French. Her recent operational deployment in 2022 included a life-threatening incident for which she received recognition for her service and actions during the operation.
+
+<br> <br><strong>Behavioral Traits:</strong>
+
+<br>- Demonstrates exceptional leadership potential (natural leader with a strong sense of responsibility)
+<br>- Exhibits a high level of physical and mental stamina (endurance and perseverance in challenging situations)
+<br>- Shows a strong commitment to personal and professional growth (self-awareness and desire for improvement)
+<br>- Possesses a high degree of integrity and moral character (trustworthy and ethical)
+
+<br> <br><strong>Psychological Strengths:</strong>
+
+<br>- Resilience and stress tolerance
+<br>- Emotional intelligence and empathy
+<br>- Adaptability and flexibility
+<br>- Strong work ethic and motivation
+<br>- Effective communication and teamwork</td>
+    </tr>
+    <tr>
+        <td>Incident Report:</td>
+        <td>On June 19, 2022, at approximately 14:30 local time, MAJ Emily Sleten Hanson, a Naval Aviation Medical Specialist, was involved in a high-stress emergency response operation following a significant operational incident during a naval aviation deployment.
+
+            <br>
+            <br>Cleared: 
+
+<br>- Executed assigned flight operations in support of the squadron's operational mission.
+<br>- Responded to an in-flight operational emergency and applied established emergency procedures to maintain aircraft control and crew safety.
+<br>- Coordinated with squadron, carrier, and air-traffic-control personnel to support safe and effective flight operations.
+<br>- Maintained continuous situational awareness and communication throughout the incident until the aircraft and crew were safely recovered.</td>
+    </tr>
+    
+    <!-- Add more rows as needed -->
+    <tr>
+        <td>Date</td>
+        <td id="date"></td> <!-- Display current date here -->
+    </tr>
+    <tr>
+        <td>Time</td>
+        <td id="time"></td> <!-- Display current time here -->
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td><strong>Active</strong></td>
+    </tr>
+</table>
+
+<!-- Additional Information -->
+
+
+
+<script>
+    // Update time every second
+    setInterval(updateTime, 1000);
+
+    // Function to update time
+    function updateTime() {
+        var now = new Date();
+        var militaryTime = now.toTimeString().slice(0, 8);
+        document.getElementById("time").innerText = militaryTime;
+    }
+
+    // Display current date
+    var now = new Date();
+    var militaryDate = now.toISOString().slice(0, 10);
+    document.getElementById("date").innerText = militaryDate;
+</script>
+
+</body>
+</html>
